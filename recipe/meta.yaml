@@ -1,7 +1,7 @@
 {% set org = "mrocklin" %}
 {% set name = "streamz" %}
-{% set version = "0.1.0" %}
-{% set sha256 = "c8621a9552225c5bb8ece69618a35a0fd262087040043f0c9b8ef7ac41e40f17" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "d0a06290183f491443a359bef86e859ade3ecafcd67b930824658abd034abfcc" %}
 
 package:
   name: {{ name|lower }}
@@ -25,6 +25,7 @@ requirements:
     - zict
     - tornado
     - toolz
+    - six
 
 test:
   imports:
@@ -36,11 +37,10 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'This is a small library to manage continuous streams of data,
-  particularly when complex branching and control flow situations arise.'
+  summary: "Manage streaming data, optionally with Dask and Pandas"
 
   description: |
-    This is a small library to manage continuous streams of data, particularly when complex branching and control flow situations arise.
+    Manage streaming data, optionally with Dask and Pandas
   doc_url: https://streamz.readthedocs.io/en/latest/
   dev_url: https://github.com/mrocklin/streamz/
 
